@@ -21,3 +21,10 @@ Example call, using these arguments:
 ```
 ./vid_reader /path/to/my/video.vid ./path/for/output prefix-s002 5 1000 60 3
 ```
+
+## How do I compile this project with G++?
+
+Here is the example command line:
+```
+g++ -I. bayer.cpp VidHeader.cpp -lz read-frame.cpp main.cpp showErrMsgBox.cpp -o vidReader.exe
+```
