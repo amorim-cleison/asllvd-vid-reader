@@ -19,7 +19,7 @@ Once compiled, the following arguments are required by the program, in this orde
 
 Example call, using these arguments:
 ```
-./vid_reader /path/to/my/video.vid ./path/for/output prefix-s002 5 1000 60 3
+./vidReader /path/to/my/video.vid ./path/for/output prefix-s002 5 1000 60 3
 ```
 
 ## How do I compile this project with G++?
