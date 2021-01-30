@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="zlibvc">
+</Property><Property Name="Solution File" Value="Y:\asl\software\video_compressor\vid_reader\zlib\zlib-1.2.3\contrib\vstudio\vc8\zlibvc.sln">
+</Property><Property Name="Date" Value="Tuesday, October 12, 2010">
+</Property><Property Name="Time" Value="16:55 PM">
+</Property></Properties><Event ErrorLevel="0" Project="zlibvc" Source="zlibvc.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="zlibvc" Source="zlibvc.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="0" Project="zlibvc" Source="zlibvc.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="zlibvc" Source="zlibvc.vcproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="zlibstat" Source="zlibstat.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="0" Project="zlibstat" Source="zlibstat.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="zlibstat" Source="zlibstat.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="testzlib" Source="testzlib.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="testzlib" Source="testzlib.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="0" Project="testzlib" Source="testzlib.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="testzlib" Source="testzlib.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="testzlibdll" Source="testzlibdll.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="testzlibdll" Source="testzlibdll.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="0" Project="testzlibdll" Source="testzlibdll.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="testzlibdll" Source="testzlibdll.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="minizip" Source="minizip.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="minizip" Source="minizip.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="0" Project="minizip" Source="minizip.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="minizip" Source="minizip.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="miniunz" Source="miniunz.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="miniunz" Source="miniunz.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="0" Project="miniunz" Source="miniunz.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="miniunz" Source="miniunz.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="zlibvc.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="zlibvc.sln" Description="Converted">
+</Event></UpgradeLog>
