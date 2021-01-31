@@ -1,5 +1,6 @@
 #include "VidHeader.h"
 #include <cstdlib>
+#include <cstring>
 
 // Arguments:
 // - Path to the input video (.vid) file

@@ -1,6 +1,5 @@
-vidReader.exe: 
-	g++ -I. bayer.cpp VidHeader.cpp -lz read-frame.cpp main.cpp showErrMsgBox.cpp -o vidReader.exe
+Linux:
+g++ -I. bayer.cpp VidHeader.cpp -lz read-frame.cpp main.cpp showErrMsgBox.cpp -o ./bin/vidReader
 
-clean:
-	rm -f vidReader.exe
-
+Windows:
+g++ -I. bayer.cpp VidHeader.cpp -lz read-frame.cpp main.cpp showErrMsgBox.cpp -o ./bin/vidReader.exe
