@@ -5,16 +5,25 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "g++.exe - Build and debug active file",
+            "name": "g++.exe - Build and debug program",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}\\bin\\vidReader.exe",
+            // "args": [
+            //     "D:\\mestrado\\home\\student\\dl2\\grp5\\cca5\\original\\asl_2008_01_11-scn002-cam01.vid",
+            //     "./frames",
+            //     "teste-s002",
+            //     "5",
+            //     "1000",
+            //     "60",
+            //     "3"
+            // ],
             "args": [
-                "D:\\mestrado\\home\\student\\dl2\\grp5\\cca5\\original\\asl_2008_01_11-scn002-cam01.vid",
-                "./frames",
-                "teste-s002",
-                "5",
-                "1000",
+                "/home/cca5/work/asllvd-skeleton/dataset/download/asl_2008_01_11-scn002-cam01.mov",
+                "/tmp/twenty-liz-scn002-cam01",
+                "twenty-liz-scn002-cam01",
+                "2635",
+                "2661",
                 "60",
                 "3"
             ],
