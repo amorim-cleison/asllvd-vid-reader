@@ -1,27 +1,28 @@
 {
 	"version": "2.0.0",
 	"tasks": [
-		
 		{
-			"type": "cppbuild",
-			"label": "Build project",
-			"command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
-			"args": [
-				"-I",
-				"${workspaceFolder}\\",
-				"-g",
-				"${workspaceFolder}\\bayer.cpp",
-				"${workspaceFolder}\\VidHeader.cpp",
-				"-lz",
-				"${workspaceFolder}\\read-frame.cpp",
-				"${workspaceFolder}\\main.cpp",
-				"${workspaceFolder}\\showErrMsgBox.cpp",
-				"-o",
-				"${workspaceFolder}\\bin\\vidReader.exe",
-			],
-			"options": {
-				"cwd": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
+			"type": "shell",
+			"label": "Prepare build",
+			"command": "mkdir",
+			"linux": {
+				"args": [
+					"-p",
+					"${workspaceFolder}/bin/lin"
+				]
 			},
+			"windows": {
+				"args": [
+					"-p",
+					"${workspaceFolder}/bin/win"
+				]
+			}
+		},
+		{
+			"type": "shell",
+			"detail": "Compile application with g++",
+			"label": "Build project",
+			"dependsOn": "Prepare build",
 			"problemMatcher": [
 				"$gcc"
 			],
@@ -29,7 +30,42 @@
 				"kind": "build",
 				"isDefault": true
 			},
-			"detail": "compiler: \"C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe\""
+			"linux": {
+				"command": "g++",
+				"options": {},
+				"args": [
+					"-I",
+					"${workspaceFolder}/",
+					"-g",
+					"${workspaceFolder}/bayer.cpp",
+					"${workspaceFolder}/VidHeader.cpp",
+					"-lz",
+					"${workspaceFolder}/read-frame.cpp",
+					"${workspaceFolder}/main.cpp",
+					"${workspaceFolder}/showErrMsgBox.cpp",
+					"-o",
+					"${workspaceFolder}/bin/lin/vidReader"
+				]
+			},
+			"windows": {
+				"command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+				"options": {
+					"cwd": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
+				},
+				"args": [
+					"-I",
+					"${workspaceFolder}/",
+					"-g",
+					"${workspaceFolder}/bayer.cpp",
+					"${workspaceFolder}/VidHeader.cpp",
+					"-lz",
+					"${workspaceFolder}/read-frame.cpp",
+					"${workspaceFolder}/main.cpp",
+					"${workspaceFolder}/showErrMsgBox.cpp",
+					"-o",
+					"${workspaceFolder}/bin/win/vidReader.exe"
+				]
+			}
 		}
 	]
 }

@@ -8,7 +8,6 @@
             "name": "g++.exe - Build and debug program",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}\\bin\\vidReader.exe",
             // "args": [
             //     "D:\\mestrado\\home\\student\\dl2\\grp5\\cca5\\original\\asl_2008_01_11-scn002-cam01.vid",
             //     "./frames",
@@ -18,12 +17,21 @@
             //     "60",
             //     "3"
             // ],
+            // "args": [
+            //     "/home/cca5/work/asllvd-skeleton/dataset/download/asl_2008_01_11-scn002-cam01.mov",
+            //     "/tmp/twenty-liz-scn002-cam01",
+            //     "twenty-liz-scn002-cam01",
+            //     "2635",
+            //     "2661",
+            //     "60",
+            //     "3"
+            // ],
             "args": [
-                "/home/cca5/work/asllvd-skeleton/dataset/download/asl_2008_01_11-scn002-cam01.mov",
-                "/tmp/twenty-liz-scn002-cam01",
-                "twenty-liz-scn002-cam01",
-                "2635",
-                "2661",
+                "~/Downloads/scene5-camera1.mov",
+                "./frames",
+                "teste",
+                "2388",
+                "2406",
                 "60",
                 "3"
             ],
@@ -32,7 +40,6 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gdb.exe",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -40,7 +47,15 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "Build project"
+            "preLaunchTask": "Build project",
+            "linux": {
+                "miDebuggerPath": "gdb",
+                "program": "${workspaceFolder}/bin/lin/vidReader"
+            },
+            "windows": {
+                "miDebuggerPath": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gdb.exe",
+                "program": "${workspaceFolder}/bin/win/vidReader.exe"
+            }
         }
     ]
 }
