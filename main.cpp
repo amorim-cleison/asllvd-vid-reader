@@ -1,6 +1,7 @@
 #include "VidHeader.h"
 #include <cstdlib>
 #include <cstring>
+#include <cmath>
 
 // Arguments:
 // - Path to the input video (.vid) file
@@ -20,15 +21,26 @@ int main(int argc, char *argv[])
 	int fps_in = atoi(argv[6]);
 	int fps_out = atoi(argv[7]);
 
-	const char *output_path = "%s/%s_%05d.ppm";
-	char outfile[1000];
-	int frame_number = (frame_start - 1);
-	int step = fps_in / fps_out;
+	// Validate if video was read successfully:
+	if (strlen(vid->errMessage) > 0) {
+		printf("ERROR: '%s'", vid->errMessage);
+		return 901;
+	}
+
+	// Correct frames bounds:
+	const float ROUND_BASE = 10.0;
+	frame_start = std::floor(frame_start / ROUND_BASE) * ROUND_BASE;
+	frame_end = std::ceil(frame_end / ROUND_BASE) * ROUND_BASE;
 
 	if (frame_end > vid->num_frames)
 	{
 		frame_end = vid->num_frames;
 	}
+
+	const char *output_path = "%s/%s_%05d.ppm";
+	char outfile[1000];
+	int frame_number = (frame_start - 1);
+	int step = fps_in / fps_out;
 
 	while (frame_number < frame_end)
 	{
@@ -39,4 +51,10 @@ int main(int argc, char *argv[])
 	}
 	delete vid;
 	return 0;
+}
+
+int get_start_frame(int arg_start)
+{
+	const int ROUND_BASE = 10;
+	return std::floor(arg_start / ROUND_BASE) * ROUND_BASE;
 }
