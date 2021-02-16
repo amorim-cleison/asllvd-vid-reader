@@ -27,13 +27,9 @@
             //     "3"
             // ],
             "args": [
-                "~/media/cleison/Files/home/student/dl2/grp5/cca5/dataset/workdir/download/asl_2008_01_11-scn002-cam01.vid",
-                "./frames",
-                "teste",
-                "2388",
-                "2406",
-                "60",
-                "3"
+                "/media/cleison/Files/work/dataset/download/asl_2008_01_11-scn002-cam01.vid",
+                "./frames/frame.ppm",
+                "2388"
             ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
